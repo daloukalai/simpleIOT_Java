@@ -18,7 +18,7 @@ public class TestCase_IOT_Array {
             String[] taintedStuff = new String[] {
                 testCase.getVulnerableSource(file)
             };
-
+			// A sure vulnerability here.
             testCase.writeToVulnerableSink(file, taintedStuff);
 
             testCase.writeToVulnerableSink(file, taintedStuff[0]);
